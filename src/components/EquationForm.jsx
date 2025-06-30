@@ -35,8 +35,9 @@ function EquationForm() {
     <div className="space-y-4">
       <form onSubmit={solve} className="space-y-2">
         <div className="flex items-center space-x-2">
-          <label className="w-4">a</label>
+          <label htmlFor="a" className="w-4">a</label>
           <input
+            id="a"
             type="number"
             name="a"
             value={coeffs.a}
@@ -45,8 +46,9 @@ function EquationForm() {
           />
         </div>
         <div className="flex items-center space-x-2">
-          <label className="w-4">b</label>
+          <label htmlFor="b" className="w-4">b</label>
           <input
+            id="b"
             type="number"
             name="b"
             value={coeffs.b}
@@ -55,8 +57,9 @@ function EquationForm() {
           />
         </div>
         <div className="flex items-center space-x-2">
-          <label className="w-4">c</label>
+          <label htmlFor="c" className="w-4">c</label>
           <input
+            id="c"
             type="number"
             name="c"
             value={coeffs.c}
